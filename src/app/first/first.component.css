@@ -1,19 +1,44 @@
 .container {
-  width: 40%;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin: auto;
+  width: 70%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 100px;
-  border: 1px solid black;
-  padding: 40px;
-  box-shadow: 11px 18px 51px 11px #1e7e343d;
+  border: 1px solid whitesmoke;
+  padding: 50px;
+  box-shadow: 10px 5px 30px 3px #1e7e343d;
   border-radius: 8px;
+  background-color: #f8f9fa;
 }
 
-#def-btn{
-  margin-left: 80%;
+#title {
+  margin-bottom: 30px;
 }
-
-span {
+#title span {
   color: red;
+  font-style: italic;
+}
+
+.user-text {
+  padding: 10px;
+}
+.user-text span {
+  color: #dc3545c7;
+  font-style: italic;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.method-one,
+.method-two {
+  margin-bottom: 25px;
+}
+#tarea{
+  border-radius: 3px ;
+  border: 1px solid #343a40;
+  padding: 10px;
+}
+.result span{
+  font-style: italic;
+  color: red;
+}
+#def-btn {
+  margin-left: 78.5%;
 }

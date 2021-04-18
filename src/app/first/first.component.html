@@ -1,16 +1,27 @@
 <div class="container">
-  <div class="row">
-    <h4>
-      Using <span> Two Way Binding </span> to display whatever I type below
-    </h4>
+
+  <div class="row" id="title">
+    <h3>Demo for using <span> Two Way Binding </span> to display whatever I type below</h3>
+  </div> <!-- End of title section -->
+
+  <div class="user-text">
+
+    <div class="method-one">
+      <input id="tarea" type="text" placeholder="Enter any text" class="col-6" (input)="onUpdateTextField($event)"/>
+      <span>{{ myText }}</span>
+    </div> <!-- End of method one section -->
+
+    <div class="method-two">
+      <input id="tarea" type="text" placeholder="Enter any text" class="col-6" [(ngModel)]="myText"/>
+      <span>{{ myText }}</span>
+    </div> <!-- End of method two section -->
+
   </div>
 
-  <div>
-    <input type="text" class="col-4" (input)="onUpdateTextField($event)" (change)="myText = myDefaultText" />
-    <!-- <input type="text" class="form-control" [(ngModel)]="myText" /> -->
-    <P>{{ myText }}</P>
-  </div>
-  <!-- <p>Click the button for default</p> -->
-  <button id="def-btn" class="btn btn-danger" (click)="myText = myDefaultText">Go Default</button>
+  <div class="result">
+    <h5>Click the <span>button</span> for Defaults</h5>
+    <button id="def-btn" class="btn btn-danger" (click)="onDefaultText($event)">Go Default</button>
+  </div> <!-- End of result section -->
+
 
 </div>
