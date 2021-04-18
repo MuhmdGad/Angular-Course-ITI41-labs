@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <h4>
+      Using <span> Two Way Binding </span> to display whatever I type below
+    </h4>
+  </div>
+
+  <div>
+    <input type="text" class="col-4" (input)="onUpdateTextField($event)" (change)="myText = myDefaultText" />
+    <!-- <input type="text" class="form-control" [(ngModel)]="myText" /> -->
+    <P>{{ myText }}</P>
+  </div>
+  <!-- <p>Click the button for default</p> -->
+  <button id="def-btn" class="btn btn-danger" (click)="myText = myDefaultText">Go Default</button>
+
+</div>
