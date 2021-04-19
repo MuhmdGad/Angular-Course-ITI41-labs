@@ -1,7 +1,10 @@
 # Angular Day 02 Lab  
 
 ## Demo for Task 1 
-![Two Way Binding](./src/assets/twbindingdemo.gif)
+![Two Way Binding](./src/assets/Day2TWBinding.gif)
+## Demo for Task 2 
+![Image Slider](./src/assets/Day2ImageSlider.gif)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
 
