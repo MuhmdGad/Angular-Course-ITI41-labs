@@ -1,12 +1,9 @@
 .container {
   width: 70%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 100px;
-  border: 1px solid whitesmoke;
+  margin: 40px 35px;
   padding: 50px;
-  box-shadow: 10px 5px 30px 3px #1e7e343d;
   border-radius: 8px;
-  background-color: #f8f9fa;
+  box-shadow: 10px 5px 30px 3px #1e7e343d;
 }
 
 #title {
@@ -30,12 +27,12 @@
 .method-two {
   margin-bottom: 25px;
 }
-#tarea{
-  border-radius: 3px ;
+#tarea {
+  border-radius: 3px;
   border: 1px solid #343a40;
   padding: 10px;
 }
-.result span{
+.result span {
   font-style: italic;
   color: red;
 }

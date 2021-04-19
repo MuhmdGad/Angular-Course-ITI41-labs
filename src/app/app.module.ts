@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
+import { WrapperComponent } from './wrapper/wrapper.component';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { SecondComponent } from './second/second.component';
     AppComponent,
     FirstComponent,
     SecondComponent,
+    WrapperComponent
 
 
   ],
