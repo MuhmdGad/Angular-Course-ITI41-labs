@@ -9,10 +9,7 @@
   background-color: #f8f9fa;
 }
 
-#main-title {
-  margin-bottom: 30px;
-}
-#main-title span {
+.main-title span {
   color: red;
   font-style: italic;
 }
