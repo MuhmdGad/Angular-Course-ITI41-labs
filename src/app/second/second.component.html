@@ -1,14 +1,17 @@
 <div class="container">
+  <div class="row" id="title">
+    <h3>Slide Show uses <span> event and property binding </span></h3>
+  </div> <!-- End of title section -->
 
   <div class="image">
-    <img [src]="defaultImage" alt="{{ imgName }}" />
+    <img [src]="bindableImage" [alt]= "images[2].imageName"/>
   </div>
 
   <div class="button-list">
-    <button (click)="previousImage()" class="btn btn-success">Play</button>
-    <button (click)="nextImage()" class="btn btn-danger">Stop</button>
-    <button (click)="startSlideShow()" class="btn btn-secondary">>></button>
-    <button (click)="stopSlideShow()" class="btn btn-secondary"><<</button>
+    <!-- <button (click)="nextImage()" class="btn btn-secondary">>></button>
+    <button (click)="startSlideShow()" class="btn btn-success">Play</button>
+    <button (click)="previousImage()" class="btn btn-secondary"><<</button> -->
+    <button (click)="stopSlideShow()" class="btn btn-danger">Stop</button>
   </div>
 
 </div>
