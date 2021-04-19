@@ -44,35 +44,60 @@ export class SecondComponent implements OnInit {
         'https://i.pinimg.com/564x/ec/38/dc/ec38dc98a555dd13fbfec3a9c8501d5c.jpg',
     },
 
-    // {
-    //   imageName: 'Nature',
-    //   imageId: 1,
-    //   imageUrl:
-    //     'https://i.pinimg.com/564x/e0/76/13/e076133606f1544e1ffeea2d0c87c78e.jpg',
-    // },
+    {
+      imageName: 'Nature',
+      imageId: 6,
+      imageUrl:
+        'https://i.pinimg.com/564x/e0/76/13/e076133606f1544e1ffeea2d0c87c78e.jpg',
+    },
 
-    // {
-    //   imageName: 'Nature',
-    //   imageId: 1,
-    //   imageUrl:
-    //     'https://i.pinimg.com/564x/01/d4/d7/01d4d71022b4872125932fe69322f31b.jpg',
-    // },
+    {
+      imageName: 'Nature',
+      imageId: 7,
+      imageUrl:
+        'https://i.pinimg.com/564x/20/5f/e9/205fe9fa91fc1c2311bfe30a870067a1.jpg',
+    },
 
-    // {
-    //   imageName: 'Nature',
-    //   imageId: 1,
-    //   imageUrl:
-    //     'https://i.pinimg.com/564x/01/d4/d7/01d4d71022b4872125932fe69322f31b.jpg',
-    // },
+    {
+      imageName: 'Nature',
+      imageId: 8,
+      imageUrl:
+        'https://i.pinimg.com/564x/00/bc/8b/00bc8b1b592c0af469d569ff35730ce3.jpg',
+    },
   ];
 
   bindableImage = this.images[this.currentImage].imageUrl;
 
   constructor() {}
 
+  startSlideShow() {
+    this.interval = setInterval(() => {
+      if (this.currentImage !== this.images.length) {
+        ++this.currentImage;
+      } else {
+        this.currentImage = 0;
+      }
+      this.bindableImage = this.images[this.currentImage].imageUrl;
+    }, 800);
+  }
+
+
   stopSlideShow() {
     clearInterval(this.interval);
   }
 
+
+  previousImage() {
+    if (this.currentImage !== 0) --this.currentImage;
+    this.bindableImage = this.images[this.currentImage].imageUrl;
+  }
+
+
+  nextImage() {
+    if (this.currentImage !== this.images.length) ++this.currentImage;
+    this.bindableImage = this.images[this.currentImage].imageUrl;
+  }
+
   ngOnInit(): void {}
+
 }

@@ -1,17 +1,17 @@
 <div class="container">
   <div class="row" id="title">
-    <h3>Slide Show uses <span> event and property binding </span></h3>
+    <h3>Image Slide Show uses <span> event & property binding </span></h3>
   </div> <!-- End of title section -->
 
-  <div class="image">
-    <img [src]="bindableImage" [alt]= "images[2].imageName"/>
-  </div>
+  <div class="row">
+    <img class="image" [src]="bindableImage" [alt]= "images[3].imageName"/>
+  </div> <!-- End of image section -->
 
   <div class="button-list">
-    <!-- <button (click)="nextImage()" class="btn btn-secondary">>></button>
+    <button id="reverse" (click)="previousImage()" class="btn btn-dark"><<</button>
     <button (click)="startSlideShow()" class="btn btn-success">Play</button>
-    <button (click)="previousImage()" class="btn btn-secondary"><<</button> -->
     <button (click)="stopSlideShow()" class="btn btn-danger">Stop</button>
-  </div>
+    <button id="forward" (click)="nextImage()" class="btn btn-dark">>></button>
+  </div><!-- End of buttons section -->
 
 </div>
