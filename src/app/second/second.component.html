@@ -1,0 +1,14 @@
+<div class="container">
+
+  <div class="image">
+    <img [src]="defaultImage" alt="{{ imgName }}" />
+  </div>
+
+  <div class="button-list">
+    <button (click)="previousImage()" class="btn btn-success">Play</button>
+    <button (click)="nextImage()" class="btn btn-danger">Stop</button>
+    <button (click)="startSlideShow()" class="btn btn-secondary">>></button>
+    <button (click)="stopSlideShow()" class="btn btn-secondary"><<</button>
+  </div>
+
+</div>
