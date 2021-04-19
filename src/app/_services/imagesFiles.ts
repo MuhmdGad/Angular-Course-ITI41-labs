@@ -1,4 +1,3 @@
-
   const Images = [
     {
       imageId: 1,
