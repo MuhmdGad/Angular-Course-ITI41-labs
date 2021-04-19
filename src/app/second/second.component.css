@@ -13,7 +13,7 @@
   font-style: italic;
 }
 .image {
-  margin: 20px 20px;
+  margin: 30px 20px;
   width: 650px;
   height: 800px;
 }
@@ -26,4 +26,16 @@ button {
 }
 #reverse {
   margin-left: 7px;
+}
+.computed {
+  width: 62%;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 30px;
+  background-color: #f8f9fa;
+  margin-top: 40px;
+  box-shadow: 10px 5px 30px 3px #17a2b82b;
+}
+.computed-property {
+  color: #dc3545;
 }

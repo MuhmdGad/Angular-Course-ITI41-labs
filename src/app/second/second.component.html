@@ -1,17 +1,21 @@
 <div class="container">
-  <div class="row" id="title">
-    <h3>Image Slide Show uses <span> event & property binding </span></h3>
-  </div> <!-- End of title section -->
+    <div class="row" id="title">
+       <h3>Image Slide Show uses <span> event & property binding </span></h3>
+    </div> <!-- End of title section -->
 
-  <div class="row">
-    <img class="image" [src]="bindableImage" [alt]= "images[3].imageName"/>
-  </div> <!-- End of image section -->
+    <div class="row">
+       <img class="image" [src]="bindableImage" [alt]= "images[3].imageName"/>
+    </div> <!-- End of image section -->
 
-  <div class="button-list">
-    <button id="reverse" (click)="previousImage()" class="btn btn-dark"><<</button>
-    <button (click)="startSlideShow()" class="btn btn-success">Play</button>
-    <button (click)="stopSlideShow()" class="btn btn-danger">Stop</button>
-    <button id="forward" (click)="nextImage()" class="btn btn-dark">>></button>
-  </div><!-- End of buttons section -->
+    <div class="button-list">
+        <button id="reverse" (click)="previousImage()" class="btn btn-dark"><<</button>
+        <button (click)="startSlideShow()" class="btn btn-success">Play</button>
+        <button (click)="stopSlideShow()" class="btn btn-danger">Stop</button>
+        <button id="forward" (click)="nextImage()" class="btn btn-dark">>></button>
+    </div><!-- End of buttons section -->
+
+    <div class="computed">
+      <p>Current Image Number is: <span class="computed-property">{{imageID}}</span></p>
+    </div>
 
 </div>

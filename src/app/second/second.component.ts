@@ -66,7 +66,11 @@ export class SecondComponent implements OnInit {
     },
   ];
 
-  bindableImage = this.images[this.currentImage].imageUrl;
+  // bindableImage = this.images[this.currentImage].imageUrl;
+
+  imageID = Math.floor(Math.random() * this.images.length + 0);
+
+  bindableImage = this.images[this.imageID].imageUrl;
 
   constructor() {}
 
@@ -78,26 +82,25 @@ export class SecondComponent implements OnInit {
         this.currentImage = 0;
       }
       this.bindableImage = this.images[this.currentImage].imageUrl;
+      this.imageID = this.images[this.currentImage].imageId;
     }, 800);
   }
-
 
   stopSlideShow() {
     clearInterval(this.interval);
   }
 
-
   previousImage() {
     if (this.currentImage !== 0) --this.currentImage;
     this.bindableImage = this.images[this.currentImage].imageUrl;
+    this.imageID = this.images[this.currentImage].imageId;
   }
-
 
   nextImage() {
     if (this.currentImage !== this.images.length) ++this.currentImage;
     this.bindableImage = this.images[this.currentImage].imageUrl;
+    this.imageID = this.images[this.currentImage].imageId;
   }
 
   ngOnInit(): void {}
-
 }
