@@ -1,5 +1,8 @@
 # AngularDay02
 
+# Demo for Task 1 
+![Two Way Binding](./src/assets/twbindingdemo.gif)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
 
 ## Development server
