@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8 alert alert-light mt-5 offset-2">
+      <h2 class="text-info">Validation with normal way</h2>
+      <form (ngSubmit)="sub()">
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="fname"
+            placeholder="Enter your First Name "
+            [(ngModel)]="fname"
+            name="fname"
+          />
+          <div *ngIf="!Fname" class="text-danger">FirstName is Required</div>
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lname"
+            placeholder="Enter your Last Name "
+            [(ngModel)]="lname"
+            name="lname"
+          />
+          <div *ngIf="!Lname" class="text-danger">LastName is Required</div>
+        </div>
+        <div class="form-group">
+          <label for="fname">Age</label>
+          <input
+            type="number"
+            class="form-control"
+            id="age"
+            placeholder="Enter your Age "
+            [(ngModel)]="age"
+            name="age"
+          />
+          <div *ngIf="!Age || age < 20 || age > 50" class="text-danger">
+            Age is Required and betwwen 20 and 50
+          </div>
+        </div>
+        <div class="form-group">
+          <input
+            type="submit"
+            class="form-control btn btn-primary"
+            value="Register"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8 offset-2 mt-5 mb-5">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of data">
+            <td>{{ item.fname }}</td>
+            <td>{{ item.lname }}</td>
+            <td>{{ item.age }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
