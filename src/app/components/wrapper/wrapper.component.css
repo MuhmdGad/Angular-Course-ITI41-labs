@@ -1,0 +1,14 @@
+.main-wrapper {
+  display: flex;
+  flex-direction:row;
+  width: 70%;
+  /* margin: 8%; */
+  margin-left: 15%;
+  padding: 45px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid whitesmoke;
+  border-radius: 8px;
+  box-shadow: 10px 5px 30px 3px #343a4030;
+  background-color: #fff;
+
+}
