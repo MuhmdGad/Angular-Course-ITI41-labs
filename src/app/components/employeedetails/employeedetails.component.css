@@ -1,0 +1,9 @@
+.data {
+  width: 60%;
+  text-align: left;
+  font-size: 20px;
+  padding: 20px;
+}
+.data span {
+  margin-left: 20px;
+}
