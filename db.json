@@ -40,14 +40,14 @@
       "name": "Mohamed Shaban",
       "email": "mohamedshaban@gmail.com",
       "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      "image": "https://petapixel.com/assets/uploads/2014/08/photoquote2.jpg"
+      "image": "https://petapixel.com/assets/uploads/2014/05/photoquote8.jpg"
     },
     {
-      "id": 7,
-      "name": "Mohamed Magdy",
-      "email": "mohamedmagdycivily@gmail.com",
-      "details": "A thing that you see in my pictures is that I was not afraid to fall in love with these people.",
-      "image": "https://petapixel.com/assets/uploads/2014/05/photoquote5.jpg"
+      "id": 8,
+      "email": "salahelshenawy@gmail.com",
+      "details": "I hope everything will be fine with all of you.",
+      "image": "https://petapixel.com/assets/uploads/2014/05/photoquote1.jpg",
+      "name": "Salah Elshenawy"
     }
   ]
 }

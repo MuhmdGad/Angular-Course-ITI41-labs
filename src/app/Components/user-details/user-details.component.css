@@ -1,3 +1,48 @@
-#image {
-  height: 300px;
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: beige;
+  box-shadow: 1px 2px 1px 0 gray;
+  border-radius: 2px;
+  /* margin: auto; */
+  margin-top: 100px;
+  padding: 0;
+}
+
+.profile-details {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.user-details {
+  margin-top: 25px;
+  padding: 25px;
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Times New Roman', Times, serif;
+  font-family: cursive;
+}
+.user-details span{
+  color: red;
+  
+}
+.profile-image {
+  margin: auto;
+  margin-top: 20px;
+  
+}
+.profile-image img {
+  width: 200px;
+  height: 200px;
+}
+.image-container {
+  width: 50%;
+}
+.image-container img {
+  /* max-width: 500px; */
+  max-height:700px;
+  width: 99.9%;
+  height: 99.9%;
+  padding: 0;
 }
